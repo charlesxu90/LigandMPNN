@@ -424,6 +424,7 @@ def main(args) -> None:
                     device=device,
                 )
                 output_dict = model.sample(feature_dict)
+                print(output_dict)
 
                 # compute confidence scores
                 loss, loss_per_residue = get_score(

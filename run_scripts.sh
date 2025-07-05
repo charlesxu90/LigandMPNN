@@ -41,3 +41,7 @@ do
             --batch_size 10 \
             --number_of_batches 5
 done;
+
+
+# Score with LigandMPNN
+python score.py --model_type ligand_mpnn   --autoregressive_score 1 --pdb_path  ./example/GB1/2gi9.pdb --out_folder ./example/GB1/llh_out  --use_sequence 1  --batch_size 1 --number_of_batches  10
